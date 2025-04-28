@@ -1,0 +1,9 @@
+{
+    "builds":[
+        {"src":"appy", "use": "@vercel/pythos"}
+    ],
+    "routes":[
+       {"src":"/(.*)", "dest": "app.py"}
+    ]
+
+}
