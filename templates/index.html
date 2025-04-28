@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <nav class="header">
+        <ul>
+            <li><a href="{{url_for('homepage')}}">Home</a></li>
+            <li><a href="{{url_for('contact')}}" > Contact </a></li>
+            <li><a href="{{url_for('project')}}">Project</a></li>
+            <li><a href="{{url_for('me')}}">About Me</a></li>
+        </ul>
+    </nav>
+    <section class="home">
+        <div class="home-img">
+            <img style="border-radius: 100px;" src="{{ url_for('static', filename='images/farrel.png') }}" height="500" alt="Foto Farrel">
+        </div>
+        <div class="home-text">
+            <h1>Hi! Saya,</h1> 
+            <h1><span><b>Farrel Arayputra Andanu</b></span></h1>
+            <p>Selamat datang di website portofolio saya, Anda dapat menekan 'About Me' untuk mengetahui mengenai saya dan 'Project' untuk melihat Project saya</p>
+            <a href="{{url_for('me')}}"><button>About Me</button></a>
+            <a href="{{url_for('project')}}"><button>Project</button></a>
+            <a href="{{url_for('contact')}}"><button>Contact</button></a>
+        </div>
+    </section>  
+</body>
+</html>
